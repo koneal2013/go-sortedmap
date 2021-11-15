@@ -42,3 +42,7 @@ func New(n int, cmpFn ComparisonFunc) *SortedMap {
 func (sm *SortedMap) Len() int {
 	return len(sm.sorted)
 }
+
+func (sm *SortedMap) GetSortedKeyByIndex(idx int) interface{} {
+	return sm.sorted[idx]
+}
